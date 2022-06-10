@@ -5,7 +5,8 @@
     padding: 0;
 }
 #header {
-    font-size: 50px;
+    font-size: 75px;
+    text-indent: 100px;
     text-align: center;
     background-color: #1363DF;
     height: 100px;
@@ -21,7 +22,7 @@
 
 #container {
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     display: grid;
     width: 750px;
     height: 750px;
@@ -37,25 +38,36 @@
       background-color: black;
   }
 
-  button {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    font-size: 15px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-  }
-
-  button:hover {
-      background-color: #47B5FF;
-  }
-
-#mainContainer {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+button {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 5px;
 }
+
+button:hover {
+  background-color: #47B5FF;
+}
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+    
+}
+
+#superContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
 #gridSize {
     width: 100px;
     height: 100px;
@@ -64,4 +76,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-  }
+}
+
+#range {
+
+  margin: auto;
+}
+#rangeSlider {
+height: 50px;
+width: 150px;
+}
