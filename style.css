@@ -1,14 +1,24 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+
 * {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+   
+    
 }
 #header {
     font-size: 75px;
     text-indent: 100px;
     text-align: center;
-    background-color: #1363DF;
+    background-color:#3d3d3d;
     height: 100px;
     justify-content: center;
     
@@ -21,17 +31,24 @@
   }
 
 #container {
-    margin: auto;
-    margin-top: 5%;
+
     display: grid;
     width: 750px;
     height: 750px;
     grid-template-rows: repeat(var(--grid-rows), 0fr);
     grid-template-columns: repeat(var(--grid-cols), 0fr);
+    
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: white;
+    
   }
   #griditem {
     border: 1px solid black;
     text-align: center;
+    
+    
   }
 
   #griditem.active {
@@ -56,15 +73,18 @@ button:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  height: 750px;
+  background-color: #424242;
   margin-top: auto;
-  margin-bottom: auto;
-    
+  margin-left: 150px;
+  border-radius: 15px;
 }
 
 #superContainer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  background-color: #575757;
 }
 
 
@@ -85,4 +105,17 @@ button:hover {
 #rangeSlider {
 height: 50px;
 width: 150px;
+}
+
+#footer {
+  background-color: #575757;
+  height: 100%;
+  
+}
+
+#demo {
+  font-size: 20px;
+}
+p { 
+  font-size: 20px;
 }
